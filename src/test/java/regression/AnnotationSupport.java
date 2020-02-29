@@ -11,13 +11,13 @@ public class AnnotationSupport {
 	
 	@BeforeTest
 	public void connectingDB() {
-		System.out.println("connecting to DB  ");
+		System.out.println("connecting to cb  ");
 		
 	}
 	
 	@BeforeMethod
 	public void launchinBrowser() {
-		System.out.println("launchinBrowser  method");
+		System.out.println("launchinBrowser  ");
 		
 	}
 	
