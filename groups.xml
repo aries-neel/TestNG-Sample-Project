@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Group test ">
+	<!-- if we want to define at suite level -->
+	<groups>
+		<run>
+			<include name="bvt" />
+		</run>
+	</groups>
+
+	<test name=" grouping test ">
+		<classes>
+			<class name="groups.Testcases" />
+
+		</classes>
+	</test>
+	<test name="grouping test 2">
+		<classes>
+
+			<class name="groups.TestCases2" />
+		</classes>
+	</test><!-- Test -->
+</suite> <!-- Suite -->

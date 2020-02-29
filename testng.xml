@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Functiona testing">
+
+<listeners>
+<listener class-name="customeListeners.Listeners"></listener>
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+</listeners>
+
+	<test name="AnnotationSupport">
+		<classes>
+
+			<class name="demo.AnnotationSupport" />
+
+		</classes>
+	</test>
+	<test name="Assertion">
+		<classes>
+
+			<class name="demo.Assertion" />
+		</classes>
+	</test>
+	<test name="DependsOn">
+		<classes>
+			<class name="demo.DependsOn" />
+
+
+		</classes>
+	</test>
+	
+	<test name="Skipping forcefully">
+		<classes>
+
+			<class name="demo.ForcefullySkipping" />
+		</classes>
+	</test>
+</suite> 
